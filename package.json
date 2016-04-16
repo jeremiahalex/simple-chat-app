@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/jeremiahalex/ff-chat-app.git"
   },
+  "engines": {
+    "node": "5.9.0"
+  },
   "author": "JeremiahAlex",
   "license": "MIT",
   "bugs": {
