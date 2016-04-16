@@ -1,41 +1,46 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WDISG2 Chat</title>
-    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>WDISG2 Chat <span id="status" class="label label-default">loading</span></h1>
-   
-    <section id="join" class="well hidden">
-      <form id="JoinForm" class="form-inline text-right">
-          <fieldset>
-            <input type="text" class="form-control " placeholder="Your name" autocomplete="off" required autofocus />
-            <button id="sendJoin" class="btn btn-success" disabled>Join</button>
-          </fieldset>
-      </form>
-    </section>
     
-    <main class="panel panel-default hidden">
-      <div class="panel-heading">
-        <form id="MessageForm" class="form-inline text-right">
-          <fieldset>
-            <input type="text" class="form-control " placeholder="say what?" autocomplete="off"  required autofocus  />
-            <button id="sendMessage" class="btn btn-success" disabled>Send</button>
-          </fieldset>
+    <div class="container">
+      <h1>WDISG2 Chat <span id="status" class="label label-default">loading</span></h1>
+
+      <section id="join" class="well hidden">
+        <form id="JoinForm" class="form-inline text-right">
+            <fieldset>
+              <input type="text" class="form-control " placeholder="Your name" autocomplete="off" required autofocus />
+              <button id="sendJoin" class="btn btn-success" disabled>Join</button>
+            </fieldset>
         </form>
-      </div>
-      <section class="panel-body">
-        <div class="text-center"><small id="connected"></small></div>
-        <hr>
-        <div id="messages">
-          
-        </div>
       </section>
-    </main>
+
+      <main class="panel panel-default hidden">
+        <div class="panel-heading">
+          <form id="MessageForm" class="form-inline text-right">
+            <fieldset>
+              <input type="text" class="form-control " placeholder="say what?" autocomplete="off"  required autofocus  />
+              <button id="sendMessage" class="btn btn-success" disabled>Send</button>
+            </fieldset>
+          </form>
+        </div>
+        <section class="panel-body">
+          <div class="text-center"><small id="connected"></small></div>
+          <hr>
+          <div id="messages">
+
+          </div>
+        </section>
+      </main>
+    </div>
     
   <!-- Socket.io -->
   <script src="//cdn.socket.io/socket.io-1.4.5.js"></script>
