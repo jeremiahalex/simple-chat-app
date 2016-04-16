@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WDISG2 Chat</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>WDISG2 Chat <span id="status" class="label label-default">loading</span></h1>
+   
+    <section id="join" class="well hidden">
+      <form id="JoinForm" class="form-inline text-right">
+          <fieldset>
+            <input type="text" class="form-control " placeholder="Your name" autocomplete="off" required autofocus />
+            <button id="sendJoin" class="btn btn-success" disabled>Join</button>
+          </fieldset>
+      </form>
+    </section>
+    
+    <main class="panel panel-default hidden">
+      <div class="panel-heading">
+        <form id="MessageForm" class="form-inline text-right">
+          <fieldset>
+            <input type="text" class="form-control " placeholder="say what?" autocomplete="off"  required autofocus  />
+            <button id="sendMessage" class="btn btn-success" disabled>Send</button>
+          </fieldset>
+        </form>
+      </div>
+      <section class="panel-body">
+        <div class="text-center"><small id="connected"></small></div>
+        <hr>
+        <div id="messages">
+          
+        </div>
+      </section>
+    </main>
+    
+  <!-- Socket.io -->
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <!-- JQuery -->
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <!-- main client js -->
+  <script src="js/client.js"></script>
+  </body>
+</html>
