@@ -1,5 +1,5 @@
 {
-  "name": "ff-chat-app",
+  "name": "simple-chat-app",
   "version": "1.0.0",
   "description": "A starter kit for building a socket.io based chat app with a frontend framwork",
   "main": "server.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeremiahalex/ff-chat-app.git"
+    "url": "git+https://github.com/jeremiahalex/simple-chat-app.git"
   },
   "engines": {
     "node": "5.9.0"
@@ -17,11 +17,11 @@
   "author": "JeremiahAlex",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jeremiahalex/ff-chat-app/issues"
+    "url": "https://github.com/jeremiahalex/simple-chat-app/issues"
   },
-  "homepage": "https://github.com/jeremiahalex/ff-chat-app#readme",
+  "homepage": "https://github.com/jeremiahalex/simple-chat-app#readme",
   "dependencies": {
-    "express": "^4.13.4",
-    "socket.io": "^1.4.5"
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8"
   }
 }
