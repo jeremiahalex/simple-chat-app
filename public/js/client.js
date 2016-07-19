@@ -77,7 +77,7 @@ $(function () {
     for (var i = 0; i < connections.length; ++i) {
       if (connections[i].user) {
         if (i > 0) {
-          if (i == connections.length - 1) names += ' and '
+          if (i === connections.length - 1) names += ' and '
           else names += ', '
         }
         names += connections[i].user.name
