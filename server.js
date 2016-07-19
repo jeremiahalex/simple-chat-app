@@ -48,7 +48,7 @@ io.on('connection', (socket) => {
     let connection = findConnection(socket.id)
     connection.user = user
     // emit welcome message to new user
-    socket.emit('welcome', `Hi ${user.name}, welcome to WDI SG2 Chat!`)
+    socket.emit('welcome', `Hi ${user.name}, welcome to Simple Chat!`)
     // broadcast their arrival to everyone else
     socket.broadcast.emit('joined', user)
     io.sockets.emit('online', connections)
